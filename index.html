@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistemas Operacionais</title>
+	<link rel="stylesheet" type="text/css" href="memoria.css">
+	<script type="text/javascript">
+		function val(){
+			var elem = document.getElementById('rec2').value;//pega-se o valor digitado do input com (.value)
+			var elem2 = document.getElementById('recebmem').value;
+			var elem3 = document.getElementById('recebreglimite').value;
+			var elem4 = document.getElementById('recebeinst').value;
+			
+			//verifica se os campos estao vazios
+			if(document.getElementById('rec2').value == ""){
+				alert("Digite a opção 1!");
+				return false;
+			}
+			if(document.getElementById('recebmem').value == ""){
+				alert("Digite a opção 2!");
+				return false;
+			}
+			if(document.getElementById('recebeinst').value == ""){
+				alert("Digite a opção 3!");
+				return false;
+			}
+			if(document.getElementById('recebreglimite').value == ""){
+				alert("Digite a opção 4!");
+				return false;
+			}
+
+			//verifica se os campos estao corretos
+			if(elem == document.getElementById('regbase').innerText || elem == "registrador base"){
+			//pega-se o conteúdo da div com (.innerText)
+				//alert("Opção 1 correta");
+			}
+				else {
+					alert("Opção 1 incorreta");
+					return false;
+				}
+
+			if(elem2 == document.getElementById('mem').innerText || elem2 == "memória"){
+				//alert("Opção 2 correta");
+			}
+				else {
+					alert("Opção 2 incorreta");
+					return false;
+				}
+
+			if(elem4 == document.getElementById('inst').innerText || elem4 == "instrução"){
+				//alert("Opção 4 correta");
+			}
+				else {
+					alert("Opção 3 incorreta");
+					return false;
+				}
+
+			if(elem3 == document.getElementById('reglimite').innerText || elem3 == "registrador limite"){
+				//alert("Opção 3 correta");
+			}
+				else {
+					alert("Opção 4 incorreta");
+					return false;
+				}
+
+			if(elem == document.getElementById('regbase').innerText || elem == "registrador base" && elem2 == document.getElementById('mem').innerText || elem2 == "memória" && elem3 == document.getElementById('reglimite').innerText || elem3 == "registrador limite" && elem4 == document.getElementById('inst').innerText || elem4 == "instrução"){
+				alert("Parabéns! Você acertou todas as opções");
+			}
+		}
+	</script>
+</head>
+<body>
+	
+	<a href="http://unifametro.edu.br" target="_blank">
+		<img src="logo-unifametro.png" id="logo" title="Clique para acessar">
+	</a>
+
+	<h3>Discipina: Sistemas Operacionais</h3>
+
+	<h3>Professor: Kleber Carrha</h3>
+	<p align="center">
+		<a href="https://www.carrha.com.br" title="Site oficial">
+			<img src="carrha.png" id="carrha">
+		</a>
+	</p>
+
+	<p align="center">
+		<font size="2">
+			<b>Alunos:</b> Daniel Castro - Eduardo Couto - Everton Silva - Felipe Rodrigo - Juliana de Quental  - 
+			<br>Leonardo de Souza - Mateus Melo - Marcus Vinícius - Paulo José
+	</p>
+
+	<p align="center">
+		Preencha os campos vazios com as opções abaixo
+		<br>Clique nas opções para saber mais
+		</font>
+	</p>
+
+	<form id="frm" method="post" onsubmit="val(this); return false;">
+
+	<div id="cabeca">
+	
+		<div id="inst">
+			<a href="#" title="Clique para intruções">
+			<font size="4">
+				Instrução
+			</font>
+			</a>
+		</div>
+
+		<div id="mem">
+			<a href="https://www.youtube.com/watch?v=Q8ZqjEafmNc" target="_blank" title="Clique para lembrar">
+			<font size="4">
+				Memória
+			</font>
+			</a>
+		</div>
+
+		<div id="reglimite">
+			<a href="https://pt.wikipedia.org/wiki/Registrador_(inform%C3%A1tica)" target="_blank" title="Clique para registrar">
+			<font size="4">
+				Registrador limite
+			</font>
+			</a>
+		</div>
+
+		<div id="regbase">
+			<a href="https://pt.wikipedia.org/wiki/Registrador_(inform%C3%A1tica)" target="_blank" title="Clique para registrar de novo">
+			<font size="4">
+				Registrador base
+			</font>
+			</a>
+		</div>
+
+		<div id="swap">
+			<a href="https://www.ime.usp.br/~adao/GM2.pdf" target="_blank" title="Clique para swappar x-D">
+			<font size="4">
+				Swapping
+			</font>
+			</a>
+		</div>
+		<div id="listas">
+			<a href="#" target="_blank" title="Gerenciamento com listas">
+				<font size="4">
+					Hardware
+				</font>
+			</a>
+		</div>
+		<br><br>
+	</div> <!-- fim div cabeçalho-->
+
+		<div id="rec">
+		<p>
+			<font size="4">
+				Quando um processo é executado, o
+			</font>
+				<input style="text-align: center; background-color: #BEBEBE; height: 25px;"type="text" id="rec2" name="rec2" placeholder="Opção 1"> <!-- recebe opção registrador base -->
+			<font size="4">
+				é carregado com o endereço físico onde seu programa começa na
+			</font>
+				<input style="text-align: center; background-color: #BEBEBE; height: 25px;" type="text" id="recebmem" name="recebmem" placeholder="Opção 2"> <!-- recebe opção memória -->
+			<font size="4">
+				e o registrador limite é carregado com o comprimento do programa. Toda vez que um processo referencia a memória, seja para buscar uma 
+			</font>
+				<input style="text-align: center; background-color: #BEBEBE; height: 25px;" type="text" id="recebeinst" name="recebeinst" placeholder="Opção 3"> <!-- recebe opção instrução -->
+			<font size="4">
+				ou ler ou escrever uma palavra de dados, o hardware da CPU automaticamente adiciona o valor base ao endereço gerado pelo processo antes de enviá-lo para o barramento de memória. Registrador base e o
+			</font>
+				<input style="text-align: center; background-color:#BEBEBE; height: 25px;" type="text" id="recebreglimite" name="recebreglimite" placeholder="Opção 4"> <!-- recebe opção registrador limite -->
+			<font size="4">
+				são protegidos de tal maneira que apenas o sistema operacional pode modificá-los.<br> 
+				<br>
+			</font>
+		</p>
+			<input type="submit" style="height: 35px;" value="Verificar resposta"> <!--onclick="val()">-->
+			<br><br><br>
+		</div>
+	</form>
+</body>
+</html>

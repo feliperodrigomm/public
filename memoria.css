@@ -1,0 +1,111 @@
+@media(max-width: 480px) {
+	body{
+		width: 60%;
+	}
+}
+@media(max-width: 767px) {
+	body{
+		width: 60%;	
+	}
+	
+}
+@media(min-width: 768px) and (max-width: 979px) {
+	body{
+		width: 60%;
+	}
+}
+@media(min-width: 1200px) {
+	body{
+		width: 40%;
+	}
+}
+body{
+	
+	height: auto;
+	margin:auto;
+	min-width:600px;
+	max-width:2000px;
+	font-family: arial;
+	text-align: justify;
+}
+div{
+	margin: 10px;
+	height: auto;
+}
+input{
+	border-radius: 10px 10px 10px 10px;
+}
+#rec{
+	line-height: 30px;
+}
+#carrha{
+	width: 170px;
+	height: 130px;
+	filter: saturate(250%);
+}
+#cabeca{
+	display: table;
+}
+#mem{
+	background-color: #CCff99;
+	width: 170px;
+	position: relative;
+	float: left;
+	left: 8px;
+	text-align: center;
+}
+#regbase{
+	background-color: #CCff99;
+	width: 170px;
+	position: relative;
+	left: 8px;
+	float: left;
+	text-align: center;
+}
+#reglimite{
+	background-color: #CCff99;
+	width: 170px;
+	position: relative;
+	float: left;
+	left: 8px;
+	text-align: center;
+}
+#swap{
+	background-color: #CCff99;
+	width: 170px;
+	position: relative;
+	left: 8px;
+	float: left;
+	text-align: center;
+}
+#inst{
+	background-color: #CCff99;
+	width: 170px;
+	position: relative;
+	left: 8px;
+	float: left;
+	text-align: center;
+}
+#listas{
+	background-color: #CCff99;
+	width: 170px;
+	position: relative;
+	left: 8px;
+	float: left;
+	text-align: center;
+}
+#logo{
+	width: auto;
+	position: relative;
+	max-height: 400px;
+	max-width: 500px;
+	/*margin-left: 350px;*/
+}
+#logofam{
+	position: relative;
+	float: left;
+	left: 50px;
+}
+h2,h3{
+	text-align: center;
+}
